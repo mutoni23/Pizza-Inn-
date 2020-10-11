@@ -2,7 +2,6 @@
 
 ## Description
 This is a web app sells pizza where you will have options to choose pizzas accordingly. we are always at your service, anyday anytime!
-
 ## Setup/Installation Requirements
 * To access this document first you need to go on your github account,
 * Then search for the document name,
