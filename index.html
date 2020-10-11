@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">"
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Pizza-Inn</title>
+
+</head>
+
+</html>
+
+<body>
+  
+        <div class="landing-page">
+            <p class="pizza-inn text-white  text-bold text-center">PIzzA-inn</p>
+        </div><br><br>
+        <h1 class="menu text-center">Our full menu</h1><br><br>
+
+        <div class="row">
+            <div class="col-md-6">  
+                <img class="img-top" src="assets/1.jpg">
+                <h3>sicilian pizza</h3>
+            </div>
+            <div class="col-md-6">
+                <img class="img-top" src="assets/2.jpg">
+                <!-- <div class="overlay"> -->
+                <h3>four season pizza</h3>
+            </div>
+        </div><br><br>
+
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Kindly place your order below</h2>
+                <form action="" id="choose-pizza">
+                    <label for="">Choose your pizza size</label><br><br>
+                    <select class="form-control" name="size" id="size">
+                        <option value="5000">Large</option>
+                        <option value="3500">Medium</option>
+                        <option value="1000">Small</option>
+                    </select><br><br>
+                    <label for="">Choose your crust type</label><br><br>
+                    <select class="form-control" name="" id="crust">
+                        <option value="550" name="crust">Crispy</option>
+                        <option value="350" name="crust">Gluten-free</option>
+                        <option value="300" name="crust">stuffed</option>
+                    </select><br><br>
+                    <label for="">Choose your toppings</label> <br><br>
+                    <input value="250" type="checkbox" id="toppingone">Mushrooms</option><br>
+                    <input value="150" type="checkbox" id="toppingone">Sausage</option><br>
+                    <input value="200" type="checkbox" id="toppingone">Onions</option><br><br>
+                    <!-- <input value="150" type="checkbox" id="toppingone">Mozarella cheese<br><br> -->
+                    <label for="">Number of pizzas you want</label><br>
+                    <input class="form-control form-group" type="text" id="numberofpizza">
+                   <button name="button" type="submit" id="submit" value="Check-Out"
+                        onclick="calctotalPrice()">Submit</button><br>
+                       
+                </form>
+            </div>
+
+            <div class="col-md-6">
+                <div id="formlocation">
+                    <!-- <span id="delivery">
+                        <input id="submit" type="submit" class="btn btn-primary" value="delivery">
+                    </span> -->
+                    <h3>Would you prefer the pizza to be delivered at your door?<br> Then enter your address below:</h3> 
+
+                    <form id="delivery">
+                        <label for="name">Name</label>
+                        <input class="form-control" type="text" name="" id="name" required="required"><br><br><br>
+                        <label for="location">Location</label>
+                        <input class="form-control" type="text" id="location" placeholder="location..."><br><br><br>
+                        <label for="phonenumber">Phone Number</label>
+                        <input class="form-control" type="tel" placeholder="07xxxxxxxx" id="number"> <br><br><br><br>
+                        <button type="submit" name="button" id="submit">submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
